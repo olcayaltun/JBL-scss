@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    z-index: var(--z-fixed);
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: var(--header-height);
+        &__logo{
+            color: var(--first-color);
+            font-weight: var(--font-semi-bold);
+            font-size: var(--h2-font-size);
+            
+        }
+        &__list{
+            text-align: center;
+            display: flex;
+            column-gap: 50px;
+        }
+        &__link{
+            color: var(--white-color);
+            font-weight: var(--font-medium);
+            transition: color 0.4s;
+            white-space: nowrap;
+            &:hover{
+                color: var(--first-color);
+            }
+        }
+    }
+    
+}
